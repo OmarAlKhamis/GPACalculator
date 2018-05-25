@@ -8,12 +8,12 @@
 
 import Foundation
 
-class CalculatorBrain{
-    var semester:Semester
-    init(semester:Semester) {
-        self.semester = semester
-    }
-}
+//class CalculatorBrain{
+//    var semester:Semester
+//    init(semester:Semester) {
+//        self.semester = semester
+//    }
+//}
 
 class Semester{
     private var courses:[Course]                                                                    // An array holding courses which are represented by course letter grade and course credit hours
