@@ -14,10 +14,4 @@ class GPACalculationViewController:UIViewController {
     
     @IBOutlet weak var prevCredits: UIStackView!
     
-
-    let textFields = [UITextField]()
-    
-
-    
-    
 }

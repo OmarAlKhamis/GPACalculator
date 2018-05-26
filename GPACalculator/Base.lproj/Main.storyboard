@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="597.60000000000002" y="391.75412293853077"/>
         </scene>
-        <!--Item 1-->
+        <!--Calculate GPA-->
         <scene sceneID="AKL-C6-SKd">
             <objects>
                 <viewController id="HeX-zp-1Md" customClass="GPACalculationViewController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,37 +112,42 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eFu-Rz-uOs">
-                                                <rect key="frame" x="30" y="30" width="315" height="190"/>
+                                                <rect key="frame" x="30" y="171.5" width="315" height="188"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XS9-SR-9oo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="29.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPA scale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZW5-wU-Qkr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPA scale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZW5-wU-Qkr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="29.5"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                             </label>
                                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lft-4D-ukg">
-                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="31"/>
+                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="30.5"/>
                                                                 <segments>
                                                                     <segment title="5"/>
                                                                     <segment title="4"/>
                                                                 </segments>
+                                                                <color key="tintColor" red="0.74689881347612741" green="0.7618806670984456" blue="0.27788035746365447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </segmentedControl>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cM1-TU-3uP">
-                                                        <rect key="frame" x="0.0" y="40" width="315" height="30"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="315" height="29.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous GPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quK-bB-to3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous GPA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quK-bB-to3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="29.5"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDD-k3-Osd">
-                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="30"/>
+                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="29.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -150,16 +155,18 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="It1-Ce-YN0">
-                                                        <rect key="frame" x="0.0" y="80" width="315" height="30"/>
+                                                        <rect key="frame" x="0.0" y="79" width="315" height="30"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L6Q-Be-9jd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-Lt-xPN">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous credits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-Lt-xPN">
                                                                         <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BL-ju-HQl">
                                                                         <rect key="frame" x="167.5" y="0.0" width="147.5" height="30"/>
@@ -172,43 +179,51 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CR1-40-I0A">
-                                                        <rect key="frame" x="0.0" y="120" width="315" height="30"/>
+                                                        <rect key="frame" x="0.0" y="119" width="315" height="29.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v55-us-Gn6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester GPA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v55-us-Gn6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="29.5"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-78-7GU">
-                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-78-7GU">
+                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="29.5"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mb7-lI-pyh">
-                                                        <rect key="frame" x="0.0" y="160" width="315" height="30"/>
+                                                        <rect key="frame" x="0.0" y="158.5" width="315" height="29.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cumulative GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06G-ex-gy7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cumulative GPA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06G-ex-gy7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="29.5"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-eU-mN5">
-                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-eU-mN5">
+                                                                <rect key="frame" x="167.5" y="0.0" width="147.5" height="29.5"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PcN-Zb-Emb">
-                                                <rect key="frame" x="10" y="291.5" width="355" height="230"/>
+                                                <rect key="frame" x="10" y="432" width="355" height="230"/>
                                                 <subviews>
                                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mbl-ec-S74">
                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="0.0"/>
@@ -242,6 +257,7 @@
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Class 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8M-zX-LFR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="30"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -265,6 +281,7 @@
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Class 2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N50-BS-7Iq">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="30"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -288,6 +305,7 @@
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Class 3" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-IH-ow5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="30"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -311,6 +329,7 @@
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Class 4" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaB-D0-2gT">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="30"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -334,6 +353,7 @@
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Class 5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2k-Ao-amF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="30"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -354,45 +374,69 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX7-V6-gF6">
-                                                <rect key="frame" x="54" y="261" width="42" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX7-V6-gF6">
+                                                <rect key="frame" x="54" y="400.5" width="42" height="21.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ai2-9j-RDO">
-                                                <rect key="frame" x="164" y="260" width="47" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Grade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ai2-9j-RDO">
+                                                <rect key="frame" x="164" y="399.5" width="47" height="23.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-kO-maV">
-                                                <rect key="frame" x="151" y="540" width="54" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="add class" image="images"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLB-mU-ACu">
+                                                <rect key="frame" x="277" y="400.5" width="68" height="22.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate GPA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4l-gi-0OT">
+                                                <rect key="frame" x="114" y="100" width="109" height="21.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCR-uw-1Lj">
+                                                <rect key="frame" x="147" y="717" width="64" height="30"/>
+                                                <color key="backgroundColor" red="0.74689881349999998" green="0.76188066710000002" blue="0.27788035750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Calculate">
+                                                    <color key="titleShadowColor" red="0.88570004150000003" green="0.88570004150000003" blue="0.88570004150000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLB-mU-ACu">
-                                                <rect key="frame" x="277" y="261" width="55" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.74428518629075802" green="0.8772007102443159" blue="0.92169284326424872" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
+                                            <constraint firstItem="HCR-uw-1Lj" firstAttribute="top" secondItem="PcN-Zb-Emb" secondAttribute="bottom" constant="55" id="2La-gD-EUS"/>
+                                            <constraint firstAttribute="bottom" secondItem="HCR-uw-1Lj" secondAttribute="bottom" constant="253" id="3UB-Fw-D5V"/>
+                                            <constraint firstItem="N4l-gi-0OT" firstAttribute="top" secondItem="JR2-Vs-M9g" secondAttribute="top" constant="100" id="3tM-qq-AXQ"/>
+                                            <constraint firstItem="N4l-gi-0OT" firstAttribute="leading" secondItem="JR2-Vs-M9g" secondAttribute="leading" constant="114" id="4eg-65-sj0"/>
                                             <constraint firstAttribute="trailing" secondItem="hLB-mU-ACu" secondAttribute="trailing" constant="30" id="4gn-TK-rVt"/>
                                             <constraint firstItem="PcN-Zb-Emb" firstAttribute="leading" secondItem="JR2-Vs-M9g" secondAttribute="leading" constant="10" id="6dV-bc-RmN"/>
                                             <constraint firstItem="PcN-Zb-Emb" firstAttribute="top" secondItem="HX7-V6-gF6" secondAttribute="bottom" constant="10" id="7TN-zP-ESs"/>
                                             <constraint firstItem="HX7-V6-gF6" firstAttribute="top" secondItem="eFu-Rz-uOs" secondAttribute="bottom" constant="41" id="8o4-Vo-BPq"/>
                                             <constraint firstAttribute="trailing" secondItem="PcN-Zb-Emb" secondAttribute="trailing" constant="10" id="9nO-ya-GOY"/>
-                                            <constraint firstItem="eFu-Rz-uOs" firstAttribute="top" secondItem="JR2-Vs-M9g" secondAttribute="top" constant="30" id="FVk-hK-BGK"/>
                                             <constraint firstItem="PcN-Zb-Emb" firstAttribute="top" secondItem="hLB-mU-ACu" secondAttribute="bottom" constant="9.5" id="Krb-ro-xWG"/>
                                             <constraint firstItem="hLB-mU-ACu" firstAttribute="top" secondItem="eFu-Rz-uOs" secondAttribute="bottom" constant="41" id="Lq1-1k-oUI"/>
                                             <constraint firstItem="eFu-Rz-uOs" firstAttribute="leading" secondItem="JR2-Vs-M9g" secondAttribute="leading" constant="30" id="MUJ-jV-7Tc"/>
                                             <constraint firstItem="HX7-V6-gF6" firstAttribute="leading" secondItem="JR2-Vs-M9g" secondAttribute="leading" constant="54" id="NBl-ru-reC"/>
                                             <constraint firstItem="Ai2-9j-RDO" firstAttribute="leading" secondItem="HX7-V6-gF6" secondAttribute="trailing" constant="68" id="SvT-Zb-qML"/>
                                             <constraint firstItem="Ai2-9j-RDO" firstAttribute="top" secondItem="eFu-Rz-uOs" secondAttribute="bottom" constant="40" id="XFr-Of-tmA"/>
+                                            <constraint firstItem="HCR-uw-1Lj" firstAttribute="leading" secondItem="JR2-Vs-M9g" secondAttribute="leading" constant="147" id="afC-Oq-XBY"/>
                                             <constraint firstItem="hLB-mU-ACu" firstAttribute="leading" secondItem="Ai2-9j-RDO" secondAttribute="trailing" constant="66" id="byl-1Z-js2"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="N4l-gi-0OT" secondAttribute="trailing" constant="20" symbolic="YES" id="dO5-gC-zTw"/>
+                                            <constraint firstItem="HCR-uw-1Lj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ai2-9j-RDO" secondAttribute="trailing" id="jYo-p1-efp"/>
+                                            <constraint firstItem="eFu-Rz-uOs" firstAttribute="top" secondItem="N4l-gi-0OT" secondAttribute="bottom" constant="50" id="m14-lI-ov4"/>
                                             <constraint firstAttribute="height" constant="1000" id="vgN-gw-uJI"/>
                                             <constraint firstAttribute="trailing" secondItem="eFu-Rz-uOs" secondAttribute="trailing" constant="30" id="xGs-4k-HCb"/>
                                             <constraint firstItem="PcN-Zb-Emb" firstAttribute="top" secondItem="Ai2-9j-RDO" secondAttribute="bottom" constant="9.5" id="ycD-dp-TGh"/>
@@ -417,7 +461,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QBr-Y1-rfV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nqb-dL-Zzb"/>
+                    <tabBarItem key="tabBarItem" title="Calculate GPA" id="nqb-dL-Zzb"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="prevCredits" destination="It1-Ce-YN0" id="m5b-m5-ELi"/>
@@ -447,7 +491,4 @@
             <point key="canvasLocation" x="-354" y="-97"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="images" width="225" height="225"/>
-    </resources>
 </document>
