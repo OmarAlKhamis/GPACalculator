@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImproveGPAViewController: UIViewController{
+class MaximumGPAViewController: UIViewController{
     
     
 }

@@ -8,12 +8,19 @@
 
 import Foundation
 
-//class CalculatorBrain{
-//    var semester:Semester
-//    init(semester:Semester) {
-//        self.semester = semester
-//    }
-//}
+class CalculatorBrain{
+    var semester:Semester?
+    
+    
+    init(semester:Semester) {
+        self.semester = semester
+    }
+}
+
+// total hours
+// earned hours
+// current gpa
+
 
 class Semester{
     private var courses:[Course]                                                                    // An array holding courses which are represented by course letter grade and course credit hours
@@ -23,6 +30,7 @@ class Semester{
     private var previousQualityPoints:Double{get{return previousGPA*Double(previousCreditHours)}}   // Previuosely earned quality poinst, prior to this semester
     private var totalQualityPoints:Double{get{return previousQualityPoints+attemptedQualityPoints}} // Total number of quality points for all semesters
     private var totalCreditHours:Int{get{return previousCreditHours+attemptedCreditHours}}          // Total number of credit hours, for all sesemter
+//    private var remainingCreditHours:Int{get{return 0.0 }}
     private var attemptedCreditHours:Int{ get{var CH = 0; for course in self.courses{ CH = CH + course.creditHours }; return CH } }  // The total number of attapted credit hourst in this semester
     private var attemptedQualityPoints:Double{      // Quality points of this semester
         get{
@@ -40,6 +48,11 @@ class Semester{
     }
     var semesterGPA:Double{get{return attemptedQualityPoints/Double(attemptedCreditHours)}}         // This semester's GPA
     var cumulativeGPA:Double{get{return totalQualityPoints/Double(totalCreditHours)}}               // Cumulative GPA for all semester
+//    var maximumGPA:Double{
+//        get{
+//            return (Double(remainingCreditHours)*LetterGrades.outOf4["A+"]!)/Double(totalCreditHours)
+//        }
+//    }
     
     // Constructor of the class, prevoius values will default to 0 if not entered
     init(courses:[Course],gpaScale:GPAScale,previousCreditHours:Int=0, previousGPA:Double=0.0){
