@@ -10,5 +10,16 @@ import UIKit
 
 class MaximumGPAViewController: UIViewController{
     
+    @IBOutlet weak var scal: UISegmentedControl!
     
+    @IBOutlet weak var currentgpa: UITextField!
+    
+    
+    @IBOutlet weak var hrPass: UITextField!
+    
+    @IBOutlet weak var hrTotal: UITextField!
+    
+    @IBAction func calculateMaxGpa(_ sender: UIButton) {
+        
+    }
 }
