@@ -29,7 +29,7 @@
         <!--Item 1-->
         <scene sceneID="AKL-C6-SKd">
             <objects>
-                <viewController id="HeX-zp-1Md" customClass="GPACalculationView" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HeX-zp-1Md" customClass="GPACalculationViewController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nD6-rQ-ynK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
