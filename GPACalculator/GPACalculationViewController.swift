@@ -10,6 +10,14 @@ import UIKit
 
 class GPACalculationViewController:UIViewController {
     
+    @IBOutlet weak var prevGPA: UITextField!
+    
+    @IBOutlet weak var prevCredits: UIStackView!
+    
+
+    let textFields = [UITextField]()
+    
+
     
     
 }
